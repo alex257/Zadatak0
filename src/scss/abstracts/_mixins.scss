@@ -1,0 +1,26 @@
+//
+@mixin mQ($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+
+
+//
+@mixin color($name, $value) {
+    .#{$name} {
+      color: $value;
+    }
+    .#{$name}-bg {
+      background-color: $value;
+    }
+  }
+
+@include color('blue', $blue);
+@include color('gray', $gray);
+@include color('pink', $pink);
+@include color('purple', $purple);
+@include color('black', $black);
+@include color('white', $white);
+@include color('header-color', $header-color);
