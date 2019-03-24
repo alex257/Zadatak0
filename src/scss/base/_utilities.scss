@@ -55,6 +55,13 @@
     align-items: center;
   }
   
+.hidden-xs {
+    @include mQ($xs) {
+        display: none;
+      }
+}
+
+
 
 
 .hidden-md {

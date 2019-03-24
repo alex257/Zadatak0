@@ -1,0 +1,76 @@
+.images {
+  flex-direction: column;
+  
+  @include mQ($md) {
+    flex-direction: row;
+  }
+
+  &__box {
+    background-color: $purple;
+    flex-grow: 1;
+    
+    @include mQ($lg) {
+      //height: 100%;
+      width:100%;
+    }
+
+  }
+
+  &__icon{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    
+    @include mQ($sm) {
+        padding-top: 23.8rem;
+        padding-bottom: 23.8rem;
+        font-size: 6.6rem;
+      }
+    
+    @include mQ($md) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        font-size: 3.2rem;
+      }
+
+     @include mQ(1500px) {
+        padding-top: 23.8rem;
+        padding-bottom: 23.8rem;
+        
+      }
+
+  }
+
+  
+  &__image {
+    flex-grow: 1;
+
+    @include mQ($sm) {
+      height: 555px;
+      object-fit: cover;
+    }
+
+    @include mQ($md) {
+      display: block;
+    }
+
+    @include mQ($lg) {
+      height: auto;
+      width:100%;
+      
+    }
+  }
+
+  img {
+    @include mQ($sm) {
+      //height: 555px;
+    }
+    @include mQ($md) {
+      height: auto;
+    }
+    @include mQ($lg) {
+      height: auto;
+      width:100%;
+      
+    }
+  }
+}

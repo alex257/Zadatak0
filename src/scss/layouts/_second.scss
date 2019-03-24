@@ -1,0 +1,29 @@
+.second {
+  font-size: 0.8rem;
+  height: 7.6rem;
+
+  @include mQ($xs) {
+    font-size: 0.8rem;
+  }
+
+  @include mQ($sm) {
+    height: 15rem;
+    font-size: 1.4rem;
+  }
+
+  @include mQ($md) {
+    height: 23.3rem;
+    font-size: 1.8rem;
+  }
+
+  @include mQ($lg) {
+    height: 24.4rem;
+    font-size: 2.3rem;
+  }
+
+  &__text {
+    //font-size: 0.8rem;
+    padding: 0px 0 40px 20px;
+    margin: 50px 0px 0px 20px;
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["functions.js"],"names":["$","document","ready"],"mappings":"AAAAA,EAAAC,UAAAC,MAAA","file":"main.js","sourcesContent":["$( document ).ready(function() {\n\n  // Get started!\n\n});\n"]}
