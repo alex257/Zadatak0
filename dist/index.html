@@ -44,14 +44,18 @@
       <section id="intro" class="intro white d-flex">
         <div class="row">
           <div class="col-xs-9">
-            <h1 class="intro__heading">
+            <h1 class="intro__heading responsive-margin-left">
               Claritas&nbsp;est&nbsp;etiam&nbsp;processus dynamicus, qui.
             </h1>
           </div>
           <div class="col-xs-3"></div>
         </div>
         <div class="row">
-          <div class="col-xs-9"><h3 class="intro__h3">Eodem modo typi</h3></div>
+          <div class="col-xs-9">
+            <h3 class="intro__heading-tertiary responsive-margin-left">
+              Eodem modo typi
+            </h3>
+          </div>
           <div class="col-xs-3 d-flex justify-content-start">
             <a><i class="icon intro__icon fas fa-chevron-right"></i></a>
           </div>
@@ -60,12 +64,14 @@
 
       <section class="second d-flex">
         <div class="col-xs-9 gray-bg white d-flex align-items-center">
-          <p class="second__text">Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="second__heading responsive-margin-left align-self-center">
+            Lorem ipsum dolor sit amet, consectetur.
+          </p>
         </div>
         <div
           class="col-xs-3 pink-bg white d-flex align-items-center justify-content-center"
         >
-          <div class="second__icon-wrapper ">
+          <div class="second__icon-wrapper">
             <a href="#">
               <i class="icon fas fa-chevron-right white"></i>
             </a>
@@ -74,18 +80,73 @@
       </section>
 
       <section class="images d-flex">
-          <div class="col-xs-12 col-md-4">
-            <div class="images__box d-flex align-items-center justify-content-center">
-              <i class="images__icon icon fas fa-chevron-right white"></i>
-            </div>
+        <div class="col-xs-12 col-md-4">
+          <div
+            class="images__box d-flex align-items-center justify-content-center"
+          >
+            <i class="images__icon icon fas fa-chevron-right white"></i>
           </div>
-          <div class="images__image col-xs-12 col-md-4 hidden-xs">
-            <img src="img/img1.jpg" alt="Image bridge" />
+          <div class="images__slider-wrapper">
+            <ul>
+              <li class="current"></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
-          <div class="images__image col-xs-12 col-md-4 hidden-xs">
-            <img src="img/img2.jpg" alt="Image girl" />
+        </div>
+
+        <div class="images__image col-xs-12 col-md-4 hidden-xs">
+          <img src="img/img1.jpg" alt="Image bridge" />
+        </div>
+        <div class="images__image col-xs-12 col-md-4 hidden-xs">
+          <img src="img/img2.jpg" alt="Image girl" />
+        </div>
+      </section>
+
+      <section class="description">
+        <h3 class="description__heading">Eudem modo typi</h3>
+
+        <div class="description__text-wrapper">
+          <div class="">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. eget,
+              efficitur hendrerit nibh. Maecenas sed congue urna, et malesuada
+              ipsum. Suspendisse molestie elit risus, ac luctus lorem fermentum
+              id. Proin non arcu justo. Nulla facilisi. Nunc ut justo consequat,
+              cursus lacus sit amet, ultrices mi.
+            </p>
+            <p>
+              Sed egestas tristique finibus. Praesent id ligula quis dolor
+              placerat pharetra. Curabitur ultricies eget nibh et aliquam.
+              Aenean efficitur nisi vel pharetra tincidunt. Integer non ligula
+              non augue mollis commodo sit amet nec neque. Ut mattis ex ac elit
+              efficitur, sit amet gravida purus ornare
+            </p>
           </div>
-        </section>
+          <div class="description__picture">
+            &nbsp;
+          </div>
+          <h3 class="description__heading description__heading--second">
+            Eudem modo typi
+          </h3>
+          <div class="">
+            <p class="description__paragraph--second-row">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. eget,
+              Nullam in gravida eros. Aenean massa augue, hendrerit eget justo
+              eget, efficitur hendrerit nibh. Maecenas sed congue urna, et
+              malesuada ipsum. Suspendisse molestie elit risusamet, ultrices mi.
+            </p>
+
+            <p class="description__paragraph--second-row">
+              Curabitur ultricies eget nibh et aliquam. Aenean efficitur nisi
+              vel pharetra tincidunt. Integer non. Ut mattis ex ac elit
+              efficitur, sit amet gravida purus ornare ac luctus lorem fermentum
+              id. Proin non arcu justo. Nulla facilisi. Nunc ut justo consequat,
+              cursus lacus sit.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

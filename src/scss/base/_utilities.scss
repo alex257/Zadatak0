@@ -1,75 +1,92 @@
 .d-flex {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .flex-row {
-    flex-direction: row;
-  }
-  
-  .flex-column {
-    flex-direction: column;
-  }
-  
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  
-  .nowrap {
-    flex-wrap: nowrap;
-  }
-  
-  .justify-content-start {
-    justify-content: flex-start;
-  }
-  
-  .justify-content-end {
-    justify-content: flex-end;
-  }
-  
-  .justify-content-center {
-    justify-content: center;
-  }
-  
-  .justify-content-between {
-    justify-content: space-between;
-  }
-  
-  .justify-content-around {
-    justify-content: space-around;
-  }
-  
-  .align-items-start {
-    align-items: flex-start;
-  }
-  
-  .align-self-center {
-    align-self: center;
-  }
-  
-  .align-items-end {
-    align-items: flex-end;
-  }
-  
-  .align-items-center {
-    align-items: center;
-  }
-  
-.hidden-xs {
-    @include mQ($xs) {
-        display: none;
-      }
+  display: flex;
+  flex-direction: row;
 }
 
+.flex-row {
+  flex-direction: row;
+}
 
+.flex-column {
+  flex-direction: column;
+}
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.hidden-xs {
+  @include mQ($xs) {
+    display: none;
+  }
+}
 
 .hidden-md {
-    @include mQ($md) {
-        display: none;
-      }
+  @include mQ($md) {
+    display: none;
+  }
 }
 
-.uppercase{
-    text-transform: uppercase;
+.uppercase {
+  text-transform: uppercase;
+}
+
+.responsive-margin-left {
+  //margin: 5rem 0px 0px 2rem;
+  margin-left: 2rem;
+
+  @include mQ($sm) {
+    margin-left: 4rem;
+    //margin: 10rem 0px 0px 4rem;
+  }
+
+  @include mQ($md) {
+    //margin: 8rem 0px 0px 7.5rem;
+    margin-left: 7.5rem;
+  }
+
+  @include mQ($lg) {
+    margin-left: 8rem;
+    //margin: 18rem 0px 0px 8rem;
+  }
 }
